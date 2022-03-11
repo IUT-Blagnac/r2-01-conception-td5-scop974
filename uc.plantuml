@@ -1,0 +1,13 @@
+@startuml Chantier
+usecase c as "gérer les chantiers"
+usecase a as "gérer les artisans"
+usecase ac as "gérer l'affectation des artisans aux chantiers"
+usecase ca as "calculer paies"
+
+actor Entreprise
+
+Entreprise -> c
+Entreprise -> a
+Entreprise -> ac
+Entreprise -> ca
+@enduml

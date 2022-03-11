@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="160px" preserveAspectRatio="none" style="width:1057px;height:160px;background:#FFFFFF;" version="1.1" viewBox="0 0 1057 160" width="1057px" zoomAndPan="magnify"><defs/><g><g id="elem_c"><ellipse cx="965.0998" cy="116.926" fill="#F1F1F1" rx="86.5998" ry="19.72" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="898.0998" y="119.7726">gérer les chantiers</text></g><g id="elem_a"><ellipse cx="760.8658" cy="116.4792" fill="#F1F1F1" rx="81.8658" ry="18.7732" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="698.3805" y="119.6523">gérer les artisans</text></g><g id="elem_ac"><ellipse cx="469.9267" cy="116.8913" fill="#F1F1F1" rx="173.9267" ry="37.1853" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="320" x="309.9267" y="119.738">gérer l'affectation des artisans aux chantiers</text></g><g id="elem_ca"><ellipse cx="189.0529" cy="116.9166" fill="#F1F1F1" rx="71.5529" ry="16.7106" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="137.5529" y="120.6641">calculer paies</text></g><!--MD5=[4206b647878100e6066f92523e03a5d6]
+entity Entreprise--><g id="elem_Entreprise"><ellipse cx="44" cy="87.206" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M44,95.206 L44,122.206 M31,103.206 L57,103.206 M44,122.206 L31,137.206 M44,122.206 L57,137.206 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="6" y="151.7011">Entreprise</text></g><!--MD5=[545f4d4fb419a8ec5e42c2564d028392]
+link Entreprise to c--><g id="link_Entreprise_c"><path d="M74.944,78.4304 C86.8524,66.5733 101.4751,54.9819 117.5,48.706 C192.612,19.29 765.444,28.349 843.5,48.706 C877.631,57.6073 912.327,78.4539 935.856,94.7363 " fill="none" id="Entreprise-to-c" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="940.116,97.7196,935.037,89.2814,936.0199,94.8522,930.4491,95.8351,940.116,97.7196" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7164c984a0067deca1ef070f0e721290]
+link Entreprise to a--><g id="link_Entreprise_a"><path d="M74.944,78.4304 C86.8524,66.5733 101.4751,54.9819 117.5,48.706 C226.547,6 531.452,18.127 644.5,48.706 C677.913,57.7439 711.577,79.0122 734.065,95.3759 " fill="none" id="Entreprise-to-a" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="738.131,98.3702,733.2551,89.813,734.1046,95.4057,728.5119,96.2553,738.131,98.3702" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5beb21a273f31643b4718316272d45dc]
+link Entreprise to ac--><g id="link_Entreprise_ac"><path d="M74.944,78.4304 C86.8524,66.5733 101.4751,54.9819 117.5,48.706 C210.773,12.177 325.869,48.317 398.622,80.2793 " fill="none" id="Entreprise-to-ac" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="403.352,82.3777,396.7467,75.0722,398.7814,80.3505,393.5031,82.3852,403.352,82.3777" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c684b5a761256445244d0b9f574e5d02]
+link Entreprise to ca--><g id="link_Entreprise_ca"><path d="M82.2324,116.706 C92.1767,116.706 102.121,116.706 112.065,116.706 " fill="none" id="Entreprise-to-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="117.266,116.706,108.266,112.706,112.266,116.706,108.266,120.706,117.266,116.706" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c9dc1b0dda9b054448537d44e03cb3da]
+@startuml
+usecase c as "gérer les chantiers"
+usecase a as "gérer les artisans"
+usecase ac as "gérer l'affectation des artisans aux chantiers"
+usecase ca as "calculer paies"
+
+actor Entreprise
+
+Entreprise -> c
+Entreprise -> a
+Entreprise -> ac
+Entreprise -> ca
+@enduml
+
+PlantUML version 1.2022.3beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
