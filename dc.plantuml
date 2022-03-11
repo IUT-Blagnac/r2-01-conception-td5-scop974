@@ -1,27 +1,31 @@
-@startuml
-class artisan  {
-     salaire
-     coordonnes
-     horaire 
-     specialite 
+@startuml DC
+class Entreprise {
+    int nbEmployes
+    public calculerPaies()
 }
-
-class chantier  {
-     début  
-     fin 
-     horaire 
+class Chantier {
+    String dateDebut
+    String dateFin
+    String adresse
 }
-
-artisan "1..*" -- "0..*"chantier 
-(artisan, chantier) .. Affecter
-
-class Affecter{
-     salaire 
-     chantier 
-     debut 
-     fin 
+class Artisan {
+    String coordonnees
+    float salaireHoraire
+    String competence
+    String disponibilite
+    
+    public getPayeArtisan() 
+    public affecterChantier()
 }
+class Affecter {
+    int heuresEffectuees
+    String dateDebutMiss
+    String dateFinMiss
+}
+Artisan "0..*" - "0..*" Chantier    
+(Artisan, Chantier) .. Affecter
 
+Entreprise "0..1" - "0..*" Artisan
 
-
+hide circle
 @enduml
