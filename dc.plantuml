@@ -1,0 +1,27 @@
+@startuml
+class artisan  {
+     salaire
+     coordonnes
+     horaire 
+     specialite 
+}
+
+class chantier  {
+     début  
+     fin 
+     horaire 
+}
+
+artisan "1..*" -- "0..*"chantier 
+(artisan, chantier) .. Affecter
+
+class Affecter{
+     salaire 
+     chantier 
+     debut 
+     fin 
+}
+
+
+
+@enduml
